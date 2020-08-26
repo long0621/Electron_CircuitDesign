@@ -52,13 +52,9 @@
       // const {shell} = require('electron');
       // const path = require('path');
       
-
-      if (remote.app.getName() == "Electron") {
+      if (remote.app.getName() == "Electron") {//electron表示測試環境
         //shell.openItem('electron-vue Setup 0.0.1.exe')
       }else{
-        //只能在桌面的指定資料夾執行
-        // const gitPath = path.join(remote.app.getPath('desktop'), '/build/.gitignore');
-        // shell.openItem(gitPath);
       }
     }
   }
