@@ -22,6 +22,9 @@
     "directories": {
       "output": "build"
     },
+    "extraResources": [
+      "./extraResources/**"
+    ],
     "files": [
       "dist/electron/**/*"
     ],

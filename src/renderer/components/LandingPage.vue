@@ -52,9 +52,15 @@
       // const {shell} = require('electron');
       // const path = require('path');
       
+      //this.filePath = remote.app.getAppPath();
       if (remote.app.getName() == "Electron") {//electron表示測試環境
         //shell.openItem('electron-vue Setup 0.0.1.exe')
       }else{
+        const test = {
+          name:"L",
+          from:"Thai"
+        };
+
       }
     }
   }
