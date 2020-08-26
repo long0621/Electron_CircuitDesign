@@ -20,7 +20,7 @@ function createWindow () {
   //webAPP();
   
   mainWindow = new BrowserWindow({
-    height: 563,
+    height: 600,
     useContentSize: true,
     width: 1000
   })

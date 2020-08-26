@@ -18,13 +18,13 @@ calculateRouter.post("/home", auth ,async(req,res)=>{
   console.log(process.resourcesPath);
   
   //根據開發環境決定讀取路徑
-  let path;
-  if (app.getName() == "Electron") {
-    path = `${__dirname}/../../../extraResources/python/test.py`;//將額外資源整合到根目錄的extraResources
-  }else{
-    //正式版(process.resourcesPath 也許可用app.getAppPath()獲得)
-    path = process.resourcesPath + "/extraResources/python/test.py"
-  }
+let path;
+if (app.getName() == "Electron") {
+  path = `${__dirname}/../../../extraResources/python/test.py`;//將額外資源整合到根目錄的extraResources
+}else{
+  //正式版(process.resourcesPath 也許可用app.getAppPath()獲得)
+  path = process.resourcesPath + "/extraResources/python/test.py"
+}
   //呼叫python函式後取得結果並返回
   PythonShell.run(path, options, (err, results) => {
     //呼叫錯誤時的err還沒實作
