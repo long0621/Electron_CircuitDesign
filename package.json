@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "analysis",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "python-shell": "^2.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",

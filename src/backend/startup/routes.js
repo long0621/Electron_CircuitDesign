@@ -12,6 +12,8 @@ const routes = function(app){
   //資料庫配置
   //中間件(錯誤處理/驗證/日誌等)
   app.use('/api/calculate',calculateRouter);
+
+
 }
 
 export { routes };

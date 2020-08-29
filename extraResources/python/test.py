@@ -1,9 +1,12 @@
 import sys 
 import json
 
+
+def calVoltage(current,resistance):
+    return int(current)*int(resistance)
+
 result = {
-    'Name': sys.argv[1],
-    'From': sys.argv[2]
+    'voltage': calVoltage(sys.argv[1],sys.argv[2])
   }
 
 json = json.dumps(result)

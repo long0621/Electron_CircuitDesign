@@ -1,7 +1,7 @@
 
 
 const state = {
-  // isAlert: false,
+  ohmResult:{}
 }
 
 export { state };

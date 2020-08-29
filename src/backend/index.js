@@ -1,8 +1,12 @@
 import express from "express";
-import {routes} from "./startup/routes"
+import {routes} from "./startup/routes";
+import cors from "cors"
 
 const expressServer = express();
-routes(expressServer);
+expressServer.use(cors());//引用cors解決跨域問題
+routes(expressServer);//將各項服務的總模組加入
+
+
 
 
 //設定port與連接
